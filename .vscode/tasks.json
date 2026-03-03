@@ -1,0 +1,35 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build Debug Version",
+			"type": "shell",
+			"command": "clang++",
+			"args": [
+				"-g",
+				"-o",
+				"leetcode",
+				"hot100/Hot100_20.cpp"
+			],
+			"group": "build",
+			"presentation": {
+				"reveal": "always",
+				"panel": "new"
+			}
+		},
+		{
+			"label": "Build and Run",
+			"type": "shell",
+			"command": "clang++",
+			"args": [
+				"-o",
+				"leetcode",
+				"hot100/Hot100_20.cpp"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
