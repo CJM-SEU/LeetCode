@@ -43,6 +43,14 @@ private:
         else cout << "not pair" << endl;
         return siginal;
     }
+    bool IsSame(char front, char behind){
+        int siginal = (front == '(' && behind == '(') || 
+                (front == '{' && behind == '{') || 
+                (front == '[' && behind == '[');
+        if(siginal) cout << "same" << endl;
+        else cout << "not same" << endl;
+        return siginal;
+    }
     
 };
 int main(){
